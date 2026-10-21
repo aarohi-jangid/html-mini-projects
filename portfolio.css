@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f3ff;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #3a0ca3;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #c9b6ff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #6200ff, #3a0ca3);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 10px 0 25px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: white;
+  color: #6200ff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e9e4ff;
+}
+
+/* Sections */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  color: #6200ff;
+  border-bottom: 2px solid #6200ff;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #6200ff;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+/* Education table */
+.edu {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.edu th, .edu td {
+  border: 1px solid #d0c2ff;
+  padding: 12px;
+  text-align: left;
+}
+
+.edu th {
+  background-color: #6200ff;
+  color: white;
+}
+
+/* Project cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid #6200ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d0c2ff;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #b9a3ff;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6200ff;
+  box-shadow: 0 0 5px rgba(98, 0, 255, 0.4);
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #6200ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4a00c0;
+}
+
+/* Footer */
+footer {
+  background-color: #3a0ca3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
